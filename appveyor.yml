@@ -1,0 +1,5 @@
+install:
+    cmd: npm install
+
+deploy_script:
+    cmd: npm run semantic-version
