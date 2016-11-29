@@ -1,3 +1,5 @@
+skip_tags: true
+
 install:
     cmd: npm install
 
