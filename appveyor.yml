@@ -1,10 +1,5 @@
-environment:
-    nodejs_version: "Stable"
-
 install:
-    - ps: Install-Product node $env:nodejs_version
-    - cmd: npm install npm@latest -g
-    - cmd: npm install
+    cmd: npm install
 
 build_script:
     cmd: echo ok
