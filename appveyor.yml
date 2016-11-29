@@ -1,5 +1,9 @@
+environment:
+    nodejs_version: "Stable"
+
 install:
-    cmd: npm install
+    - ps: Install-Product node $env:nodejs_version
+    - cmd: npm install
 
 build_script:
     cmd: echo ok
@@ -9,6 +13,3 @@ deploy_script:
 
 on_failure:
     cmd: appveyor PushArtifact npm-debug.log
-
-environment:
-    nodejs_version: "Stable"
