@@ -32,4 +32,6 @@ module.exports = function (pluginConfig, config, cb) {
             'EBRANCHMISMATCH'
         ));
     }
+
+    cb(null);
 }
