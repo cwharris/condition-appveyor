@@ -12,7 +12,7 @@ module.exports = function (pluginConfig, config, cb) {
         ));
     }
 
-    if (env.APPVEYOR_REPO_TAG) {
+    if (env.APPVEYOR_REPO_TAG === "true") {
         var errorMessage = 'This test run was triggered by a git tag and therefore a new version won’t be published.'
 
         if (semver.valid(env.APPVEYOR_REPO_TAG)) {
