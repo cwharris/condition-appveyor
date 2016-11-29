@@ -5,4 +5,4 @@ build_script:
     cmd: echo ok
 
 deploy_script:
-    cmd: npm run semantic-version
+    cmd: npm run semantic-release
