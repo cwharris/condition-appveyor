@@ -1,0 +1,13 @@
+skip_tags: true
+
+install:
+    cmd: npm install
+
+build_script:
+    cmd: echo ok
+
+deploy_script:
+    cmd: npm run semantic-release
+
+on_failure:
+    cmd: appveyor PushArtifact npm-debug.log

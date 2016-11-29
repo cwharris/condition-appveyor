@@ -1,6 +1,6 @@
 {
   "name": "condition-appveyor",
-  "version": "0.0.0-semantic-release",
+  "version": "0.0.0-development",
   "description": "make sure only the right builds on appveyor get published",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cwharris/condition-appveyor.git"
+    "url": "https://github.com/cwharris/condition-appveyor.git"
   },
   "keywords": [
     "semantic-release",
@@ -31,6 +31,7 @@
   "homepage": "https://github.com/cwharris/condition-appveyor#readme",
   "devDependencies": {
     "@semantic-release/error": "^1.0.0",
+    "semantic-release": "^6.3.2",
     "semver": "^5.3.0"
   }
 }
