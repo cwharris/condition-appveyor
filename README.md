@@ -1,7 +1,8 @@
 # semantic-release condition-appveyor
 
 [![npm version](https://badge.fury.io/js/condition-appveyor.svg)](https://badge.fury.io/js/condition-appveyor)
-[![Build status](https://ci.appveyor.com/api/projects/status/ya4axxh4ho0b99mp?svg=true)](https://ci.appveyor.com/project/cwharris/condition-appveyor)
+[![Build status](https://ci.appveyor.com/api/projects/status/ya4axxh4ho0b99mp/branch/master?svg=true)](https://ci.appveyor.com/project/cwharris/condition-appveyor)
+
 
 [![Dependency Status](https://david-dm.org/cwharris/condition-appveyor/master.svg)](https://david-dm.org/cwharris/condition-appveyor/master)
 [![devDependency Status](https://david-dm.org/cwharris/condition-appveyor/master/dev-status.svg)](https://david-dm.org/cwharris/condition-appveyor/master#info=devDependencies)
