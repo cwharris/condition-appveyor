@@ -9,4 +9,3 @@ deploy_script:
 
 on_failure:
     cmd: appveyor PushArtifact npm-debug.log
- 
