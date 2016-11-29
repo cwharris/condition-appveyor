@@ -8,6 +8,7 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "release": {
+    "branch": "next",
     "verifyConditions": ".",
     "debug": false
   },
