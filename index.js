@@ -2,6 +2,9 @@ var semver = require('semver');
 var SRError = require('@semantic-release/error');
 
 module.exports = function (pluginConfig, config, cb) {
+  var env = config.env;
+  var options = config.options;
+
     if (env.hasOwnProperty('APPVEYOR_PULL_REQUEST_NUMBER')) {
         return cb(new SRError(
             'This test run was triggered by a pull request and therefore a new version won’t be published.',
@@ -9,7 +12,7 @@ module.exports = function (pluginConfig, config, cb) {
         ));
     }
 
-    if (env.APPVEYOR_REPO_TAG) {
+    if (env.APPVEYOR_REPO_TAG === "true") {
         var errorMessage = 'This test run was triggered by a git tag and therefore a new version won’t be published.'
 
         if (semver.valid(env.APPVEYOR_REPO_TAG)) {
@@ -29,4 +32,6 @@ module.exports = function (pluginConfig, config, cb) {
             'EBRANCHMISMATCH'
         ));
     }
+
+    cb(null);
 }
